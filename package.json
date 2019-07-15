@@ -1,0 +1,25 @@
+{
+  "name": "ticketing-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "register": "node src/cli/register.js",
+    "start": "node src/index.js",
+    "dev": "./node_modules/.bin/nodemon --watch src src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-imp-router": "^0.3.0",
+    "gitlab": "^9.0.0",
+    "inquirer": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
