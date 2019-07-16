@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const {write, read} = require('./config');
+const {write, read} = require('../services/config');
 
 async function run() {
   try {

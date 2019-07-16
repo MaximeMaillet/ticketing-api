@@ -9,11 +9,8 @@ module.exports = {
 
 let gitlab = null;
 
-async function connect() {
-  gitlab = new Gitlab({
-    host:   'https://gitlab.eoko-lab.fr',
-    token: 'WrkyCmKYxxsu5kT-LhE3'
-  });
+async function connect(config) {
+  gitlab = new Gitlab(config);
 
   return this;
 }

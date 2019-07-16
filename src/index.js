@@ -12,7 +12,7 @@ router.route([
     routes: {
       '/api': {
         [router.IMP.MIDDLEWARE]: {
-          controllers: ['express#bodyParser'],
+          controllers: ['express#bodyParser', 'providers#get'],
           inheritance: router.MIDDLEWARE.INHERITANCE.DESC,
         },
         '/posts': {
